@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do List App | Homepage</title>
+  <title>Interactive To-Do List App | Home</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
 </head>
 <body>
   <!-- Navigation Bar -->
-  <header>
+  <header class="header">
     <nav class="navbar">
       <div class="logo">
         <h1>To-Do App</h1>
@@ -26,41 +27,63 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h2>Manage Your Tasks Efficiently</h2>
-      <p>Organize your daily activities, boost your productivity, and stay on track with our powerful and easy-to-use to-do list app.</p>
-      <a href="/todo" class="cta-button">Start Now</a>
+      <h2 class="fade-in">Boost Your Productivity</h2>
+      <p>Manage tasks efficiently with our interactive To-Do List app.</p>
+      <a href="/todo" class="cta-button pulse">Get Started</a>
+    </div>
+    <div class="scroll-down">
+      <a href="#features"><i class="fas fa-arrow-down bounce"></i></a>
     </div>
   </section>
 
   <!-- Features Section -->
   <section id="features" class="features-section">
-    <h2>Features</h2>
+    <h2>App Features</h2>
     <div class="features">
-      <div class="feature-box">
-        <h3>Task Management</h3>
-        <p>Add, edit, and organize tasks in one place.</p>
+      <div class="feature-box zoom-in">
+        <i class="fas fa-plus-circle"></i>
+        <h3>Add New Tasks</h3>
+        <p>Effortlessly create tasks and organize your work.</p>
       </div>
-      <div class="feature-box">
-        <h3>Track Progress</h3>
-        <p>Mark tasks as completed and monitor your progress.</p>
+      <div class="feature-box zoom-in">
+        <i class="fas fa-check-circle"></i>
+        <h3>Mark Tasks as Completed</h3>
+        <p>Check off tasks as you complete them.</p>
       </div>
-      <div class="feature-box">
-        <h3>Simple & Intuitive</h3>
-        <p>Easy-to-use interface for a seamless experience.</p>
+      <div class="feature-box zoom-in">
+        <i class="fas fa-edit"></i>
+        <h3>Edit Existing Tasks</h3>
+        <p>Update task details anytime with ease.</p>
+      </div>
+      <div class="feature-box zoom-in">
+        <i class="fas fa-trash-alt"></i>
+        <h3>Delete Tasks</h3>
+        <p>Remove unnecessary tasks with a single click.</p>
       </div>
     </div>
+  </section>
+
+  <!-- Technology Stack Section -->
+  <section id="technology" class="tech-section">
+    <h2>Technology Stack</h2>
+    <p>We use a modern tech stack to build robust applications:</p>
+    <ul class="tech-list">
+      <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React</li>
+      <li><strong>Back-End:</strong> Node.js, Express</li>
+      <li><strong>Database:</strong> MongoDB (optional)</li>
+    </ul>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about-section">
     <h2>About Us</h2>
-    <p>We are passionate about helping people become more productive by offering a simple solution to manage tasks. Our app is designed to be intuitive, so you can focus on what matters most.</p>
+    <p>We are dedicated to improving your productivity by providing a simple and intuitive task management tool.</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <h2>Contact Us</h2>
-    <p>Got questions? Feel free to reach out to us.</p>
+    <p>Have questions? Feel free to reach out to us!</p>
     <a href="mailto:support@todoapp.com" class="cta-button">Email Us</a>
   </section>
 
